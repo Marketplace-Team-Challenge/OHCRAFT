@@ -1,0 +1,17 @@
+export const colors = {
+    whiteColor: '#ffff',
+    menuLayoutColor: '#FDFCFC',
+    headerLayoutColor: '#F7F7F7',
+    sectionLayoutColor: '#FFF9ED',
+    blackColor: '#000000',
+    placeholderColor: '#33333333',
+    mainTextColor: '#333333',
+    grayColor: '#BCBBBAEA',
+    grayCardColor: '#B5B2B2',
+    remarkTextColor:'#848282',
+    langColor: '#B1AFAF',
+    accentColor: '#FEB65E',
+    hoverBtnColor: '#EEB672EA',
+    btnColor: '#FEAF50EA',
+    siteBarColor: '#FEAF50',
+};

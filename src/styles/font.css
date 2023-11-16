@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    src: url("../fonts/NotoSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seaweed Script', cursive;
+    src: url("../fonts/SeaweedScript-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
