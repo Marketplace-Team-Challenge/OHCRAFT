@@ -1,5 +1,6 @@
 import { SocialFollow } from "../Socials/Socials";
-import { FooterNav, FooterSection, FooterWrapper } from "./Footer.styled";
+import { FooterSection, FooterWrapper } from "./Footer.styled";
+import FooterNav from "./FooterNav";
 
 const Footer = () => {
     return (

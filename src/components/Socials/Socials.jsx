@@ -9,7 +9,7 @@ import decoration from '../IMG/icons/decorationCurve.png';
 export const SocialFollow = () => {
     return (
       <SocialContainer >
-         <Link to="/" end>
+         <Link to="/">
         <LogoContainer>
             <IconLogo src={iconLogo} alt="logo" />
             <Deco src={decoration} alt="logo"/>

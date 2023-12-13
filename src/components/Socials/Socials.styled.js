@@ -41,8 +41,8 @@ export const SocialIcon = styled.img`
   width: 32px;
   height: 32px;
   transition: filter 0.3s ease;
- color: red;
-  stroke: 1px solid red;
+  fill: #FEAF50;
+  /* stroke: 1px solid red; */
 `;
 export const IconLogo = styled.img`
   width: 60px;
