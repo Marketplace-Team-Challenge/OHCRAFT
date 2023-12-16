@@ -3,7 +3,7 @@ import { FooterNavContainer, FooterNavLink, FooterNavList, FooterNavListItem, } 
 const FooterNav = () => {
     return (
         <FooterNavContainer>
-              <FooterNavList>
+            <FooterNavList>
                 <FooterNavListItem>
                     <FooterNavLink to="/about">
                 Про нас
@@ -15,19 +15,7 @@ const FooterNav = () => {
                 <FooterNavListItem><FooterNavLink to="/blog">
                 Блог
                 </FooterNavLink></FooterNavListItem>
-                <FooterNavListItem><FooterNavLink to="/support">
-                Служба підтримки
-                </FooterNavLink></FooterNavListItem>
-                <FooterNavListItem><FooterNavLink to="/return">
-                Обмін та повернення товару
-                </FooterNavLink></FooterNavListItem>
-                <FooterNavListItem><FooterNavLink to="/politics">
-                Політика конфіденційності
-                </FooterNavLink></FooterNavListItem>
-                <FooterNavListItem><FooterNavLink to="/agreement">
-                Публічна оферта
-                </FooterNavLink></FooterNavListItem>
-                </FooterNavList>
+            </FooterNavList>
        </FooterNavContainer>
     )
 }

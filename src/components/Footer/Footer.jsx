@@ -1,15 +1,18 @@
 import { SocialFollow } from "../Socials/Socials";
-import { FooterSection, FooterWrapper } from "./Footer.styled";
+import { FooterNavWrapper, FooterSection, FooterWrapper } from "./Footer.styled";
 import FooterNav from "./FooterNav";
+import FooterNavAdd from "./FooterNavAdd";
 
 const Footer = () => {
     return (
         <FooterSection>
             <FooterWrapper>
                 <SocialFollow />
-                 <FooterNav/>
+                <FooterNav />
             </FooterWrapper>
-            
+            <FooterNavWrapper>
+                <FooterNavAdd/>
+            </FooterNavWrapper>
         </FooterSection>
     )
 }
