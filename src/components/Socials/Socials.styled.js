@@ -7,7 +7,7 @@ export const SocialContainer = styled.div`
 width: 140px;
 
   flex-shrink: 0;
-  margin-right: 10px; 
+  /* margin-right: 10px;  */
 
 @media screen and (min-width: ${breakpoint.secondMobile}) {
     width: 190px;

@@ -1,3 +1,4 @@
+import { CopyRight } from "../CopyRight/CopyRight";
 import { SocialFollow } from "../Socials/Socials";
 import { FooterNavWrapper, FooterSection, FooterWrapper } from "./Footer.styled";
 import FooterNav from "./FooterNav";
@@ -13,6 +14,7 @@ const Footer = () => {
             <FooterNavWrapper>
                 <FooterNavAdd/>
             </FooterNavWrapper>
+            <CopyRight/>
         </FooterSection>
     )
 }

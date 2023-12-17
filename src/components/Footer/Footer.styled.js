@@ -35,14 +35,15 @@ export const FooterNavContainer = styled.div`
 /* display: flex;
 flex-direction: column; */
  /* flex-grow: 1;  */
-margin-left: 50px;
+margin-left: 40px;
 `
 export const FooterNavWrapper = styled.div`
 
 display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-gap:24px; 
-
+  /* margin-bottom: 24px; */
+  border-bottom: 1px solid ${colors.accentColor};
 `
 
 export const FooterWrapper = styled.div`
