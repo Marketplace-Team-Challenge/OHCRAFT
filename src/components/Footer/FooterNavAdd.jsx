@@ -7,7 +7,7 @@ const FooterNavAdd = () => {
                 <FooterNavListItem><FooterNavLink to="/support">
                 Служба підтримки
                 </FooterNavLink></FooterNavListItem>
-                <FooterNavListItem><FooterNavLink to="/return">
+                <FooterNavListItem className="item"><FooterNavLink to="/return">
                 Обмін та повернення товару
                 </FooterNavLink></FooterNavListItem>
                 <FooterNavListItem><FooterNavLink to="/politics">
