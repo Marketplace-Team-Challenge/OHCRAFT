@@ -1,4 +1,4 @@
-import UserRoutes from './Routes.jsx';
+import UserRoutes from './Routes';
 
 function App() {
 
@@ -9,4 +9,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
