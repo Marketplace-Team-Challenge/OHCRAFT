@@ -14,7 +14,7 @@ export const FooterSection = styled.footer`
     font-size: 14px;
   }
   @media screen and (min-width: ${breakpoint.tablet}) {
-    padding: 40px 109px 36px 32px;
+    padding: 52px 109px 36px 32px;
     font-size: 20px;
   }
 @media screen and (min-width: ${breakpoint.desktop}) {
@@ -39,11 +39,14 @@ margin-left: 40px;
 @media screen and (min-width: ${breakpoint.secondMobile}) {
     margin-left: 75px;
   }
+@media screen and (min-width: ${breakpoint.tablet}) {
+    margin-left: 186px;
+  }
 `
 export const FooterNavWrapper = styled.div`
 
 display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(1, 0fr); 
   grid-gap:24px; 
   /* margin-bottom: 24px; */
   border-bottom: 1px solid ${colors.accentColor};
@@ -101,14 +104,19 @@ export const FooterNavListAdditional = styled.ul`
     -webkit-column-gap: 75px;
   column-gap: 75px;
   }
+    @media screen and (min-width: ${breakpoint.tablet}) {
+  -webkit-column-gap: 110px;
+  column-gap: 110px;
+  margin-bottom: 36px;
+  }
 `
 
 export const FooterNavListItem = styled.li`
 /* flex-basis: 50%; */
 margin-bottom: 24px;
 
-  @media screen and (min-width: ${breakpoint.secondMobile}) {
-
+  @media screen and (min-width: ${breakpoint.tablet}) {
+margin-bottom: 20px;
   }
 `;
 
