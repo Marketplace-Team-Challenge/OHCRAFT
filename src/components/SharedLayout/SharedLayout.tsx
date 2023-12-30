@@ -6,7 +6,9 @@ const SharedLayout = () => {
   return (
     <>
       <Header />
+      <main className="wrapper-general-main">
       <Outlet />
+      </main>
       <Footer />
     </>
   );

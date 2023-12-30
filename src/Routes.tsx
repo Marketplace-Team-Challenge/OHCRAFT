@@ -1,11 +1,12 @@
 import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import SharedLayout from "./components/SharedLayout/SharedLayout";
 import Loader from "./components/Loader/Loader";
+import SharedLayout from "./components/SharedLayout/SharedLayout";
+import MainPage from "./components/Pages/MainPage/MainPage";
 // import PublicRoute from "./components/Routes/PublicRoutes.tsx";
 
-const MainPage = lazy(() => import("./components/Pages/MainPage/MainPage"));
+//const MainPage = lazy(() => import("./components/Pages/MainPage/MainPage"));
 const CatalogPage = lazy(() => import("./components/Pages/CatalogPage/CatalogPage"));
 const RegistrationPage = lazy(() => import("./components/Pages/RegistrationPage/RegistrationPage"));
 const LoginPage = lazy(() => import("./components/Pages/LoginPage/LoginPage"));
@@ -16,14 +17,15 @@ const UserRoutes = () => {
     <Suspense fallback={<Loader/>}>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route
+        <Route index element={<MainPage />} />
+          {/* <Route
             path="/"
                 element={
                 // <PublicRoute>
                     <MainPage />              
                 // </PublicRoute>
             }
-            />
+            /> */}
             <Route
           path="/signup"
           element={

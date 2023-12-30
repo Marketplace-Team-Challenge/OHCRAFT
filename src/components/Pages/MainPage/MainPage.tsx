@@ -1,6 +1,11 @@
+import { FAQ } from "../../sections/faq/FAQ"
+
 const MainPage = () => {
+    console.log('MainPage');
     return (
-       <h1>Main page</h1>  
+        <>
+        <FAQ />
+       </>
     )
 }
 export default MainPage ;
