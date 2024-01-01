@@ -3,5 +3,6 @@
       "target": "esnext",
       "module": "commonjs",
       "jsx": "react-jsx",
+      "noImplicitAny": true,
     }
   }

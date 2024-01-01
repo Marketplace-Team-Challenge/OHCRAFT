@@ -24,7 +24,7 @@ if (el === null) throw new Error('Root container missing in index.html')
 const root = ReactDOM.createRoot(el)
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/OHCRAFT'>
     <App />
     </BrowserRouter>
   </React.StrictMode>
