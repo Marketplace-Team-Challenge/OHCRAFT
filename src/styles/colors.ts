@@ -13,5 +13,6 @@ export const colors = {
     accentColor: '#FEB65E',
     hoverBtnColor: '#EEB672EA',
     btnColor: '#FEAF50EA',
+    bgBtnColor: "#EBA34B",
     siteBarColor: '#FEAF50',
 };
