@@ -19,6 +19,8 @@ export const FooterSection = styled.footer`
   }
 @media screen and (min-width: ${breakpoint.desktop}) {
     padding: 99px 84px 32px 84px;
+    display: flex;
+    flex-wrap: wrap;
   }
      /* @media screen and (min-width: ${breakpoint.secondMobile}) {
     width: 480px;
@@ -42,6 +44,9 @@ margin-left: 40px;
 @media screen and (min-width: ${breakpoint.tablet}) {
     margin-left: 186px;
   }
+  @media screen and (min-width: ${breakpoint.desktop}) {
+    margin-left: 143px;
+  }
 `
 export const FooterNavWrapper = styled.div`
 
@@ -50,6 +55,9 @@ display: grid;
   grid-gap:24px; 
   /* margin-bottom: 24px; */
   border-bottom: 1px solid ${colors.accentColor};
+  @media screen and (min-width: ${breakpoint.desktop}) {
+    border-bottom: 0;
+  }
 `
 
 export const FooterWrapper = styled.div`
@@ -74,7 +82,7 @@ export const FooterWrapper = styled.div`
     /* padding: 40px 109px 36px 32px; */
   }
 @media screen and (min-width: ${breakpoint.desktop}) {
-    /* padding: 99px 84px 32px 84px; */
+    margin-bottom: 32px;
   }
 `
 
@@ -109,22 +117,43 @@ export const FooterNavListAdditional = styled.ul`
   column-gap: 110px;
   margin-bottom: 36px;
   }
+    @media screen and (min-width: ${breakpoint.desktop}) {
+  margin-bottom: 32px;
+  }
 `
 
 export const FooterNavListItem = styled.li`
 /* flex-basis: 50%; */
 margin-bottom: 24px;
-
+width: 158px;
+&.item {
+    width: 138px; 
+  }
+  @media screen and (min-width: ${breakpoint.secondMobile}) {
+width: 185px;
+&.item {
+    width: 152px; 
+  }
+  }
   @media screen and (min-width: ${breakpoint.tablet}) {
 margin-bottom: 20px;
+font-size: 20px;
+width: 263px;
+&.item {
+    width: 218px; 
+  }
+  }
+   @media screen and (min-width: ${breakpoint.desktop}) {
+margin-bottom: 24px;
   }
 `;
 
 export const FooterNavLink = styled(NavLink)`
   text-decoration: none;
-  white-space: nowrap;
   display: block;
-  /* text-align: right; */
+  color: ${colors.mainTextColor};
+  width: 100%; 
+  box-sizing: border-box;
   color: ${colors.mainTextColor};
   &:hover,   &:active  {
   }

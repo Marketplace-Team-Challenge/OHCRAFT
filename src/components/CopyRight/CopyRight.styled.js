@@ -14,8 +14,11 @@ margin-right: auto;
     margin-top: 16px;
     /* width: 104px; */
   }
-  @media screen and (min-width: ${breakpoint.tablet}) {
-/* width: 130px; */
+  @media screen and (min-width: ${breakpoint.desktop}) {
+width: 100%;
+padding-top: 32px;
+border-top: 1px solid ${colors.accentColor};
+margin-top: 0;
   }
 `
 
@@ -29,11 +32,21 @@ font-size: 16px;
 > span{
     margin-right: 12px;
 }
+ @media screen and (min-width: ${breakpoint.desktop}) {
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+  }
 `
 
 export const RightsProtection = styled.p`
 font-size: 8px;
 @media screen and (min-width: ${breakpoint.tablet}) {
 font-size: 12px;
+  }
+   @media screen and (min-width: ${breakpoint.desktop}) {
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
   }
 `
