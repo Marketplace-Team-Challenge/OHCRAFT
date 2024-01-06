@@ -14,4 +14,5 @@ export const colors = {
     hoverBtnColor: '#EEB672EA',
     btnColor: '#FEAF50EA',
     siteBarColor: '#FEAF50',
+    btnActiveColor: '#EBA34B',
 };
