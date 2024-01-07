@@ -1,7 +1,6 @@
-
 import { FC, ReactElement } from 'react';
-import { ButtonActive, ButtonDisabled, ButtonHover, ButtonPassive } from './Button';
-import React from 'react';
+import { ButtonActive, ButtonDisabled, ButtonHover, ButtonPassive } from './Button.styled';
+// import React from 'react';
 
 interface ButtonMainProps {
   type?: "button" | "submit" | "reset" | undefined;

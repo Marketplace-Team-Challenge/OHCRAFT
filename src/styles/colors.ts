@@ -4,7 +4,7 @@ export const colors = {
     headerLayoutColor: '#F7F7F7',
     sectionLayoutColor: '#FFF9ED',
     blackColor: '#000000',
-    placeholderColor: '#33333333',
+    placeholderColor: 'rgba(51, 51, 51, 0.2);',
     mainTextColor: '#333333',
     grayColor: '#BCBBBAEA',
     grayCardColor: '#B5B2B2',
