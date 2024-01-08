@@ -1,8 +1,8 @@
 import { ChangeEvent, FC } from 'react';
 import {
-  acceptedStyles,
-  errorStyles,
-  inputStyles
+  InputStyles,
+  AcceptedStyles,
+  ErrorStyles,
 } from './Input.styled';
 
 interface InputProps {
@@ -40,10 +40,10 @@ const InputMain: FC<InputProps> = ({
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ): void => {
     const { value } = event.target;
-      let validationError = {
-          isValid: false,
-          message: ''
-      };
+    let validationError = {
+      isValid: false,
+      message: ''
+    };
 
     if (!value.trim()) {
       validationError = {
@@ -68,34 +68,25 @@ const InputMain: FC<InputProps> = ({
     onChange({ value, error: validationError });
   };
 
-  return (
+   return (
     <>
       {label && <label htmlFor={inputId}>{label}</label>}
-      {type === 'textarea' ? (
-        <textarea
-          id={inputId}
-          className={inputStyles}
-          placeholder={placeholder}
-          value={value}
-          name={name}
-          onChange={handleChange}
-        />
+      <InputStyles
+        id={inputId}
+        type={type}
+        value={value}
+        placeholder={placeholder}
+        name={name}
+        onChange={handleChange}
+      />
+      {error.isValid ? (
+        <AcceptedStyles>{error.message}</AcceptedStyles>
       ) : (
-        <input
-          id={inputId}
-          type={type}
-          value={value}
-          className={inputStyles}
-          placeholder={placeholder}
-          name={name}
-          onChange={handleChange}
-        />
+        <ErrorStyles>{error.message}</ErrorStyles>
       )}
-      <span className={error.isValid ? acceptedStyles.toString() : errorStyles.toString()}>
-        {error.message}
-      </span>
     </>
   );
 };
+
 
 export default InputMain;

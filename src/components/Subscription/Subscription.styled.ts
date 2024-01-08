@@ -10,8 +10,9 @@ outline: 1px solid red;
 `
 
 export const SubscriptionWrapper = styled.div`
-outline: 1px solid red;
-margin: 95px auto 56px auto;
+/* outline: 1px solid red; */
+margin: 95px 15px 17px 15px;
+text-align: center;
 `
 
 export const SubscriptionTextContainer = styled.div`
@@ -31,4 +32,5 @@ margin-bottom: 12px;
 
 export const SubscriptionSubText = styled.p`
 font-size: 12px;
+margin-bottom: 20px;
 `
