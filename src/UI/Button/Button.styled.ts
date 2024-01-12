@@ -11,14 +11,15 @@ line-height: auto;
 cursor: pointer;
 transition: 0.5s;
 border-radius: 15px;
-padding: 16px auto;
+border: 1px solid ${colors.btnActiveColor};
+padding: 16px;
 cursor: pointer;
 transition: 0.5s;
   @media only screen and (min-width: ${breakpoint.tablet}) {
-    padding: 22px auto;
+    padding: 22px;
   }
   @media only screen and (min-width: ${breakpoint.desktop}) {
-    padding: 19px auto;
+    padding: 19px;
   }
 `;
 

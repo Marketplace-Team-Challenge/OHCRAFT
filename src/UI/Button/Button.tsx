@@ -8,6 +8,7 @@ interface ButtonMainProps {
   onClick?: () => void;
   disabled?: boolean;
   buttonStyle?: 'disabled' | 'active' | 'hover' | undefined;
+  width?: number;
 }
 
 const ButtonMain: FC<ButtonMainProps> = ({ type, buttonName, onClick, disabled, buttonStyle }) => {

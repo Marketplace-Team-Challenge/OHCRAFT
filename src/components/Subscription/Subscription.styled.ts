@@ -1,18 +1,25 @@
 import { styled } from "styled-components";
 import { colors } from "../../styles/colors";
+import { breakpoint } from "../../styles/breakpoints";
 
 export const SubscriptionSection = styled.section`
 width: 100%;
 height: auto;
 background-color:  ${colors.menuLayoutColor};
-
+/* padding: 95px 15px 17px 15px; */
 outline: 1px solid red;
 `
 
 export const SubscriptionWrapper = styled.div`
 /* outline: 1px solid red; */
-margin: 95px 15px 17px 15px;
+padding: 95px 15px 56px 15px;
 text-align: center;
+max-width: 344px;
+margin-left: auto;
+margin-right: auto;
+@media only screen and (min-width: ${breakpoint.tablet}) {
+  max-width: 375px;
+  }
 `
 
 export const SubscriptionTextContainer = styled.div`
@@ -25,7 +32,7 @@ margin-right: auto;
 export const SubscriptionText = styled.p`
 font-size: 16px;
 line-height: 145%;
-font-weight: medium;
+font-weight: 600;
 text-align: center;
 margin-bottom: 12px;
 `

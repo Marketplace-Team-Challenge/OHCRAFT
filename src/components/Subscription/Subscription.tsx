@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputMain from "../../UI/Input/Input";
 import { SubscriptionSection, SubscriptionSubText, SubscriptionText, SubscriptionTextContainer, SubscriptionWrapper } from "./Subscription.styled";
+import ButtonMain from "../../UI/Button/Button";
 
 const Subscription = () => {
      const [status, setStatus] = useState<string | null>(null);
@@ -31,7 +32,8 @@ const Subscription = () => {
           }}
           value={email}
           error={emailError}
-            />
+          />
+          <ButtonMain type="submit" buttonName="Відправити" buttonStyle='active'/>
              </SubscriptionWrapper>
         </SubscriptionSection>
     )

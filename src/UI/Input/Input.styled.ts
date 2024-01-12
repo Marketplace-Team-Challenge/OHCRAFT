@@ -6,8 +6,9 @@ export const InputStyles = styled.input`
 margin-left: auto;
 margin-right: auto;
 text-align: left;
+margin-bottom: 20px;
     box-sizing: border-box;
-    max-width: 344px;
+    width: 100%;
     padding: 17px ;
     padding-right: auto;
     border-radius: 15px;
@@ -16,12 +17,12 @@ text-align: left;
     background: transparent;
     color: ${colors.mainTextColor};
     outline: none;
-     @media only screen and (min-width: ${breakpoint.mobile}) {
-    width: 344px;
+     @media only screen and (min-width: ${breakpoint.tablet}) {
+    padding: 25px;
   }
-  @media only screen and (min-width: ${breakpoint.tablet}) {
+  /* @media only screen and (min-width: ${breakpoint.desktop}) {
     width: 375px;
-  }
+  } */
 :focus{
       border: 2px solid ${colors.mainTextColor};
     }
@@ -38,9 +39,11 @@ text-align: left;
 
 export const ErrorStyles = styled.span`
     font-size: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     color: ${colors.mainTextColor};
     outline: none;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const AcceptedStyles = styled.span`
