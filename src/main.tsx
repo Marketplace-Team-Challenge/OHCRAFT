@@ -15,7 +15,7 @@
 import * as React from "react";
 import * as ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
+import './index.scss'
 import { BrowserRouter } from 'react-router-dom'
 
 const el = document.getElementById('root')

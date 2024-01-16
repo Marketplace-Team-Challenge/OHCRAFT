@@ -35,6 +35,40 @@ padding: 40px 17px 62px 19px;
 @media screen and (min-width: ${breakpoint.desktop}) {
   padding: 100px 76px 123px 80px;
   }
+`
+
+export const FAQDecorationWrapper = styled.div`
+position: relative;
+`;
+export const FAQDecorationContainer = styled.div`
+  position: absolute;
+  right: 0%;
+
+@media screen and (min-width: ${breakpoint.tablet}) {
+  width: 185px;
+  height: 185px;
+  }
+@media screen and (min-width: ${breakpoint.desktop}) {
+  width: 268px;
+  height: 268px;
+}
+`
+interface FAQDecorationImgProps {
+  desktop?: string;
+  tablet?: string;
+}
+
+export const FAQDecoration = styled.div<FAQDecorationImgProps>`
+width: 100%;
+height: 100%;
+background-size: cover;
+
+  @media screen and (min-width: ${breakpoint.tablet}) {
+    background-image: url(${(props) => props.tablet});
+  }
+  @media screen and (min-width: ${breakpoint.desktop}) {
+  background-image: url(${(props) => props.desktop});
+  }
 `;
 
 export const FAQTitleContainer = styled.div`

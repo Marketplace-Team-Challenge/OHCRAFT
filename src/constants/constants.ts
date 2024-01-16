@@ -1,24 +1,30 @@
-import { SizeTypeI } from "../components/Button/Button";
+import { SizeTypeI } from "./types";
 
-export const FAQList = [ {
-    question: "Чи повинен я вносити дані моєї банківської карти при реєстрації?",
-    answer: "Так, ви повинні вносити дані своєї банківської карти для реєстрації на нашому веб-сайті.",
-},
-{
-    question: "Як я можу придбати товар?",
-    answer: "",
-},
-{
-    question: "Чи можу я повернути товар?",
-    answer: "",
-},
-{
-    question: "Як проходить оплата товару?",
-    answer: "",
+export const constants = {
+    FAQ: {
+        FAQHeader: 'FAQ',
+        FAQList: [ {
+            question: "Чи повинен я вносити дані моєї банківської карти при реєстрації?",
+            answer: "Так, ви повинні вносити дані своєї банківської карти для реєстрації на нашому веб-сайті.",
+        },
+        {
+            question: "Як я можу придбати товар?",
+            answer: "",
+        },
+        {
+            question: "Чи можу я повернути товар?",
+            answer: "",
+        },
+        {
+            question: "Як проходить оплата товару?",
+            answer: "",
+        }
+        ],
+        FAQAltText: "FAQ photo",
+    },
+
+
 }
-];
-
-export const FAQAltText = "FAQ photo";
 
 export const ButtonText = {
     FAQ: "Більше відповідей",

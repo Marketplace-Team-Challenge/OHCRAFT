@@ -7,11 +7,12 @@ interface ButtonPropsI {
     type: "submit" | "reset" | "button",
     onClick?: React.MouseEventHandler<HTMLButtonElement>,
     children?: ReactElement | string,
+    disabled?: boolean,
 }
 
-export const Button = ({size, type, children} : ButtonPropsI)  => {
+export const Button = ({size, type, children, disabled} : ButtonPropsI)  => {
  
     return (
-        <Styled.Button size={size} type={type}>{children}</Styled.Button>
+        <Styled.Button size={size} type={type} disabled={disabled}>{children}</Styled.Button>
     );
 }
