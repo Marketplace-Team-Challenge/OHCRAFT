@@ -8,6 +8,7 @@ height: auto;
 background-color:  ${colors.menuLayoutColor};
 /* padding: 95px 15px 17px 15px; */
 outline: 1px solid red;
+position: relative;
 `
 
 export const SubscriptionWrapper = styled.div`

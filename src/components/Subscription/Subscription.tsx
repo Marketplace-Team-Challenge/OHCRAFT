@@ -1,6 +1,6 @@
 import { useState } from "react";
 import InputMain from "../../UI/Input/Input";
-import { SubscriptionSection, SubscriptionSubText, SubscriptionText, SubscriptionTextContainer, SubscriptionWrapper } from "./Subscription.styled";
+import * as Styled from './Subscription.styled';
 import ButtonMain from "../../UI/Button/Button";
 
 const Subscription = () => {
@@ -14,12 +14,12 @@ const Subscription = () => {
     setEmailError(error);
   };
     return (
-        <SubscriptionSection>
-            <SubscriptionWrapper>
-                <SubscriptionTextContainer>
-                    <SubscriptionText>Хочеш першим отримувати актуальні новини від нас?</SubscriptionText>
-                <SubscriptionSubText>Залиш свою електронну пошту</SubscriptionSubText>
-                </SubscriptionTextContainer>
+        <Styled.SubscriptionSection>
+            <Styled.SubscriptionWrapper>
+                <Styled.SubscriptionTextContainer>
+                    <Styled.SubscriptionText>Хочеш першим отримувати актуальні новини від нас?</Styled.SubscriptionText>
+                <Styled.SubscriptionSubText>Залиш свою електронну пошту</Styled.SubscriptionSubText>
+                </Styled.SubscriptionTextContainer>
                 
 
             <InputMain
@@ -34,8 +34,8 @@ const Subscription = () => {
           error={emailError}
           />
           <ButtonMain type="submit" buttonName="Відправити" buttonStyle='active'/>
-             </SubscriptionWrapper>
-        </SubscriptionSection>
+             </Styled.SubscriptionWrapper>
+        </Styled.SubscriptionSection>
     )
 }
 export default Subscription;

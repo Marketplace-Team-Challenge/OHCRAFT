@@ -17,6 +17,7 @@ margin-bottom: 20px;
     background: transparent;
     color: ${colors.mainTextColor};
     outline: none;
+    position: relative;
      @media only screen and (min-width: ${breakpoint.tablet}) {
     padding: 25px;
   }
@@ -38,17 +39,29 @@ margin-bottom: 20px;
 `;
 
 export const ErrorStyles = styled.span`
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 10px;
     color: ${colors.mainTextColor};
     outline: none;
     display: flex;
     flex-direction: column;
+position: absolute;
+top: 65%;
+left: 15%;
+@media only screen and (min-width: ${breakpoint.secondMobile}){
+left: 30%;
+font-size: 1px;
+  }
+ @media only screen and (min-width: ${breakpoint.tablet}){
+left: 40%;
+font-size: 14px;
+  }
 `;
 
 export const AcceptedStyles = styled.span`
     font-size: 14px;
     color: ${colors.mainTextColor};
+    border: red;
     outline: none;
 
 `;
