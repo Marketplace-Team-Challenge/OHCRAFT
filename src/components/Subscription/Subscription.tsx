@@ -2,6 +2,7 @@ import { useState } from "react";
 import InputMain from "../../UI/Input/Input";
 import * as Styled from './Subscription.styled';
 import ButtonMain from "../../UI/Button/Button";
+import SignLayout from "../SignLayout/SignLayout";
 
 const Subscription = () => {
      const [status, setStatus] = useState<string | null>(null);
@@ -14,7 +15,8 @@ const Subscription = () => {
     setEmailError(error);
   };
     return (
-        <Styled.SubscriptionSection>
+      <Styled.SubscriptionSection>
+        <SignLayout/>
             <Styled.SubscriptionWrapper>
                 <Styled.SubscriptionTextContainer>
                     <Styled.SubscriptionText>Хочеш першим отримувати актуальні новини від нас?</Styled.SubscriptionText>
