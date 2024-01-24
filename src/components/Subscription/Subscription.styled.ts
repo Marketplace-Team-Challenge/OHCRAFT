@@ -18,6 +18,7 @@ text-align: center;
 max-width: 344px;
 margin-left: auto;
 margin-right: auto;
+z-index: 1;
 @media only screen and (min-width: ${breakpoint.tablet}) {
   max-width: 375px;
   }
