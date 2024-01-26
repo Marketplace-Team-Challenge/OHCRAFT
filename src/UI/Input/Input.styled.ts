@@ -9,6 +9,7 @@ text-align: left;
 margin-bottom: 20px;
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     padding: 17px ;
     padding-right: auto;
     border-radius: 15px;
@@ -20,10 +21,11 @@ margin-bottom: 20px;
     position: relative;
      @media only screen and (min-width: ${breakpoint.tablet}) {
     padding: 25px;
-  }
-  /* @media only screen and (min-width: ${breakpoint.desktop}) {
     width: 375px;
-  } */
+  }
+  @media only screen and (min-width: ${breakpoint.desktop}) {
+   margin: 0;
+  }
 :focus{
       border: 2px solid ${colors.mainTextColor};
     }
@@ -55,6 +57,10 @@ font-size: 1px;
  @media only screen and (min-width: ${breakpoint.tablet}){
 left: 40%;
 font-size: 14px;
+  }
+   @media only screen and (min-width: ${breakpoint.desktop}){
+top: 75%;
+left: 45%;
   }
 `;
 

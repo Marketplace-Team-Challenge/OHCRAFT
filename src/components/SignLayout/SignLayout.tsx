@@ -1,5 +1,5 @@
 import * as Styled from "./SignLayout.styled";
-import decoration from '../../assets/sign.svg';
+import decoration from "/public/sign.svg";
 
 
 const SignLayout = () => {

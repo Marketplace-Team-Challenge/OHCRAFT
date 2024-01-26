@@ -20,7 +20,12 @@ margin-left: auto;
 margin-right: auto;
 z-index: 1;
 @media only screen and (min-width: ${breakpoint.tablet}) {
-  max-width: 375px;
+  min-width: 375px;
+  }
+  @media only screen and (min-width: ${breakpoint.desktop}) {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
   }
 `
 
@@ -30,6 +35,14 @@ height: auto;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
+@media only screen and (min-width: ${breakpoint.tablet}) {
+  width: 282px;
+  }
+  @media only screen and (min-width: ${breakpoint.desktop}) {
+  width: 343px;
+  margin-right: 87px;
+  margin-left: 80px;
+  }
 `
 export const SubscriptionText = styled.p`
 font-size: 16px;
@@ -37,9 +50,22 @@ line-height: 145%;
 font-weight: 600;
 text-align: center;
 margin-bottom: 12px;
+@media only screen and (min-width: ${breakpoint.tablet}) {
+  font-size: 20px;
+  }
+  @media only screen and (min-width: ${breakpoint.desktop}) {
+  font-size: 24px;
+  width: inherit;
+  }
 `
 
 export const SubscriptionSubText = styled.p`
 font-size: 12px;
 margin-bottom: 20px;
+@media only screen and (min-width: ${breakpoint.tablet}) {
+  font-size: 16px;
+  }
+    @media only screen and (min-width: ${breakpoint.desktop}) {
+  font-size: 20px;
+  }
 `
