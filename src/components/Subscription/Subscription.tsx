@@ -27,7 +27,7 @@ const Subscription = () => {
             <InputMain
             aria-label="Your email address"
           name="email_address"
-          placeholder="Your email address"
+          placeholder="Електронна пошта"
           type="email"
           onChange={(e) => {
             handleEmailChange(e.value, e.error);
