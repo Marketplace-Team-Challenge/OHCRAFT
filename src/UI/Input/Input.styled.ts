@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { breakpoint } from "../../styles/breakpoints";
 import { colors } from "../../styles/colors";
 
-export const InputStyles = styled.input`
+export const InputStyles = styled.input<{ error: boolean }>`
 margin-left: auto;
 margin-right: auto;
 text-align: left;
@@ -12,7 +12,7 @@ margin-bottom: 20px;
     padding: 17px ;
     padding-right: auto;
     border-radius: 15px;
-    border: 1px solid ${colors.mainTextColor};
+    border: 1px solid ${props => props.error ? colors.mainTextColor : 'red'};
     font-size: 16px;
     background: transparent;
     color: ${colors.mainTextColor};

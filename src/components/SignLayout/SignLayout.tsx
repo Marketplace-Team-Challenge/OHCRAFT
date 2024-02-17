@@ -1,11 +1,10 @@
 import * as Styled from "./SignLayout.styled";
-import decoration from '../../assets/sign.svg';
+import decoration from "../../assets/sign.svg";
 
 
 const SignLayout = () => {
   return (
     <Styled.Box>
-      {/* <Styled.Sign src={decoration} alt="decoration" /> */}
       <Styled.ExtendedSign1 src={decoration} alt="decoration" />
       <Styled.ExtendedSign2 src={decoration} alt="decoration" />
       <Styled.ExtendedSign3 src={decoration} alt="decoration" />

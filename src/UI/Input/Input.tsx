@@ -1,9 +1,5 @@
-import { ChangeEvent, FC } from 'react';
-import {
-  InputStyles,
-  AcceptedStyles,
-  ErrorStyles,
-} from './Input.styled';
+import { ChangeEvent, FC, useState } from 'react';
+import { InputStyles, AcceptedStyles, ErrorStyles } from './Input.styled';
 
 interface InputProps {
   value?: string;
@@ -41,34 +37,31 @@ const InputMain: FC<InputProps> = ({
   ): void => {
     const { value } = event.target;
     let validationError = {
-      isValid: false,
+      isValid: true,
       message: ''
     };
 
-    if (!value.trim()) {
-      validationError = {
-        isValid: false,
-        message: 'This field is required.'
-      };
-    } else if (type === 'email' && !validateEmail(value)) {
-      validationError = {
-        isValid: false,
-        message: 'Invalid email format (example@mail.com).'
-      };
-    } else if (type === 'password' && !validatePassword(value)) {
-      validationError = {
-        isValid: false,
-        message:
-          'Invalid password format (The password must contain at least one uppercase alphabetical character, one figure and must be at least 5 characters in length).'
-      };
-    } else {
-      validationError = { isValid: true, message: '' };
-    }
+   if (!value.trim()) {
+    return onChange({ value, error: validationError });
+  }
+
+  if (type === 'email' && !validateEmail(value)) {
+    validationError = {
+      isValid: false,
+      message: 'Invalid email format (example@mail.com).'
+    };
+  } else if (type === 'password' && !validatePassword(value)) {
+    validationError = {
+      isValid: false,
+      message:
+        'Invalid password format (The password must contain at least one uppercase alphabetical character, one figure and must be at least 5 characters in length).'
+    };
+  }
 
     onChange({ value, error: validationError });
   };
 
-   return (
+  return (
     <>
       {label && <label htmlFor={inputId}>{label}</label>}
       <InputStyles
@@ -78,15 +71,11 @@ const InputMain: FC<InputProps> = ({
         placeholder={placeholder}
         name={name}
         onChange={handleChange}
+        error={error.isValid} 
       />
-      {error.isValid ? (
-        <AcceptedStyles>{error.message}</AcceptedStyles>
-      ) : (
-        <ErrorStyles>{error.message}</ErrorStyles>
-      )}
+      {!error.isValid && <ErrorStyles>{error.message}</ErrorStyles>}
     </>
   );
 };
-
 
 export default InputMain;

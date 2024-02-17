@@ -6,13 +6,10 @@ export const SubscriptionSection = styled.section`
 width: 100%;
 height: auto;
 background-color:  ${colors.menuLayoutColor};
-/* padding: 95px 15px 17px 15px; */
-outline: 1px solid red;
 position: relative;
 `
 
 export const SubscriptionWrapper = styled.div`
-/* outline: 1px solid red; */
 padding: 95px 15px 56px 15px;
 text-align: center;
 max-width: 344px;
