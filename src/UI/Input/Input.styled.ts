@@ -48,6 +48,7 @@ export const ErrorStyles = styled.span`
 position: absolute;
 top: 65%;
 left: 15%;
+
 @media only screen and (min-width: ${breakpoint.secondMobile}){
 left: 30%;
 font-size: 1px;
@@ -56,12 +57,16 @@ font-size: 1px;
 left: 40%;
 font-size: 14px;
   }
+   @media only screen and (min-width: ${breakpoint.desktop}){
+top: 75%;
+left: 45%;
+  }
 `;
 
 export const AcceptedStyles = styled.span`
     font-size: 14px;
     color: ${colors.mainTextColor};
-    border: red;
+    /* border: red; */
     outline: none;
 
 `;

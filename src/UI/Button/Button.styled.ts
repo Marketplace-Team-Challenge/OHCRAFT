@@ -12,14 +12,17 @@ cursor: pointer;
 transition: 0.5s;
 border-radius: 15px;
 border: 1px solid ${colors.btnActiveColor};
-padding: 16px;
+padding: 16px 112px 16px 112px;
 cursor: pointer;
 transition: 0.5s;
   @media only screen and (min-width: ${breakpoint.tablet}) {
-    padding: 22px;
+    padding: 22px 127px 22px 127px;
   }
   @media only screen and (min-width: ${breakpoint.desktop}) {
-    padding: 19px;
+    padding: 22px 127px 22px 127px;
+    width: fit-content;
+    height: 100%;
+    margin-left: 99px;
   }
 `;
 
