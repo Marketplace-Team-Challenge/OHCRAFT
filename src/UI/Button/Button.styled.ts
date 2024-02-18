@@ -12,7 +12,7 @@ cursor: pointer;
 transition: 0.5s;
 border-radius: 15px;
 border: 1px solid ${colors.btnActiveColor};
-padding: 16px 112px 16px 112px;
+padding: 16px 92px 16px 92px;
 cursor: pointer;
 transition: 0.5s;
   @media only screen and (min-width: ${breakpoint.tablet}) {

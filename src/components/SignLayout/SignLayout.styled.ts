@@ -12,8 +12,8 @@ export const Sign = styled.img`
  content: '';
 transition: filter 0.3s ease;
   fill: #FEAF50;
-width: 16px;
-height: 16px;
+width: 17px;
+height: 17px;
 
 `
 

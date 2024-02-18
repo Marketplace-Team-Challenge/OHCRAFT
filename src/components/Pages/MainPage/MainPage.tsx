@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputMain from "../../../UI/Input/Input";
 import Subscription from "../../Subscription/Subscription";
+import { Community } from "../../Community/Community";
 
 const MainPage = () => {
   //   const [status, setStatus] = useState<string | null>(null);
@@ -15,6 +16,7 @@ const MainPage = () => {
     return (
         <>
         <h1>Main page</h1> 
+            <Community/>
             <Subscription /> 
             {/* <InputMain
             aria-label="Your email address"

@@ -25,6 +25,9 @@ z-index: 1;
     max-width: 1440px;
   }
 `
+export const SubscriptionTitle = styled.h2`
+display: none;
+`
 
 export const SubscriptionTextContainer = styled.div`
 width: 230px;

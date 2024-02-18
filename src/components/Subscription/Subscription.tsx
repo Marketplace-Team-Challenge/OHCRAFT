@@ -17,7 +17,8 @@ const Subscription = () => {
     return (
       <Styled.SubscriptionSection>
         <SignLayout/>
-            <Styled.SubscriptionWrapper>
+        <Styled.SubscriptionWrapper>
+          <Styled.SubscriptionTitle>Підписка</Styled.SubscriptionTitle>
                 <Styled.SubscriptionTextContainer>
                     <Styled.SubscriptionText>Хочеш першим отримувати актуальні новини від нас?</Styled.SubscriptionText>
                 <Styled.SubscriptionSubText>Залиш свою електронну пошту</Styled.SubscriptionSubText>
