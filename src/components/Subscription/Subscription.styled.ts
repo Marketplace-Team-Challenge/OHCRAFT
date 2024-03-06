@@ -1,15 +1,17 @@
 import { styled } from "styled-components";
 import { colors } from "../../styles/colors";
 import { breakpoint } from "../../styles/breakpoints";
-
+// import decoration from "../IMG/decoration_elements.png";
 export const SubscriptionSection = styled.section`
 width: 100%;
 height: auto;
-background-color:  ${colors.menuLayoutColor};
+/* background-color:  ${colors.menuLayoutColor}; */
+background-image: url(decoration);
 position: relative;
 `
 
 export const SubscriptionWrapper = styled.div`
+/* background-image: url('../IMG/decoration_elements.png'); */
 padding: 95px 15px 56px 15px;
 text-align: center;
 max-width: 344px;

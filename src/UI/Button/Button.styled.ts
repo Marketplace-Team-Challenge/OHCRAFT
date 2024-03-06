@@ -16,7 +16,10 @@ padding: 16px 92px 16px 92px;
 cursor: pointer;
 transition: 0.5s;
   @media only screen and (min-width: ${breakpoint.tablet}) {
-    padding: 22px 127px 22px 127px;
+    padding: 22px 0;
+    max-width: 410px;
+    /* padding-left: auto;
+    padding-right: auto; */
   }
   @media only screen and (min-width: ${breakpoint.desktop}) {
     padding: 22px 127px 22px 127px;
